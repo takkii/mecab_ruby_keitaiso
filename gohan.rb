@@ -21,7 +21,7 @@ begin
 	puts ' Mecab_wordcount_Start '.center(80,'-')
 	puts ''
 	
-	m.parse(text).scan(/\w+/) {|str| word[str] += 1}
+	m.parse(text).scan(/(?:[ぁ-ヶ]|[亜-黑]|[a-zA-Z_0-9]|ー)+/) {|str| word[str] += 1}
 	print word.sort_by{|k, v| k <=> v}
 
 	puts ''
