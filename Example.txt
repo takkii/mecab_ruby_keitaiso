@@ -1,0 +1,35 @@
+zinbeiの取り扱い説明書
+
+zinbeiは開始から全文表示まで出力にかけてます。
+
+rantan(SJIS対応)は指定する単語を、全文検索して表示します。
+
+zinbeiwは日本語を使ってirbのように入力待ちにてシンプルな機能を備えたシェルです。
+
+savaは置換機能であり、指定する単語をテキスト内で全て置き換えてくれます。
+
+(空のファイルを指定して書き出す形が良いと想います。)
+
+Rubyを使っているなら、手持ちのＰＣに入っていると便利かもしれません。
+
+現在のバージョンでは、マルチプラットフォーム化を進めていて、
+
+ほとんどの環境で動作するはずです。
+
+※ 使用する前にライセンスに同意してお使いくださいませ。
+
+There is a function which indicates a character string respectively in zinbei.
+
+Rantan is simple search shell, evolution every days.
+
+In waiting for input like irb zinbeiw is a shell with the simple function.
+
+sava is new shell.permute input word all change.
+
+If Ruby is used, when it's included in a PC of holdings, it may be convenient.
+
+After multi-platform-ization is being advanced by the present version.
+
+I should move by most environment.
+
+Before using, please agree to a license and use it.
