@@ -2,6 +2,8 @@ require 'mecab'
 require 'natto'
 
 puts ''
+puts '※ わかち書き'
+puts ''
 puts ' Mecab_wakati_Start '.center(80,'-')
 puts ''
 
@@ -18,6 +20,8 @@ begin
 	puts ''
 	puts ' Mecab_wakati_End '.center(80,'-')
 	puts ''
+	puts '※ ワードカウント ["わかち書き" , カウント数]'
+	puts ''
 	puts ' Mecab_wordcount_Start '.center(80,'-')
 	puts ''
 	
@@ -26,6 +30,8 @@ begin
 
 	puts ''
 	puts ' Mecab_wordcount_End '.center(80,'-')
+	puts ''
+	puts '※ Nattoで形態素解析'
 	puts ''
 	puts ' Natto_keitaiso_Start '.center(80,'-')
 	puts ''
