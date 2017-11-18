@@ -7,6 +7,7 @@ module Piano
 module_function
 
 def onp
+
 begin
 
 require '~/mecab_ruby_keitaiso/lib/gohan.rb'
@@ -29,9 +30,11 @@ ensure
 	puts ''
 end
 end
+
 def version
-	puts 'gohan is keitaiso_tools made in 2017.'
+	require '~/mecab_ruby_keitaiso/lib/version.rb'
 end
+
 end
 
 two = ARGV[1]
