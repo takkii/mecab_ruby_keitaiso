@@ -8,7 +8,7 @@ mecab_sample.rb→gohan.rbに変更しました。朝食にごはん、食べま
 
 > git clone https://github.com/takkii/mecab_ruby_keitaiso.git
 
-fishシェルならば↓の記述を追加します。
+ログインシェルがfishならば↓の記述を追加します。
 
 > set -x PATH ~/mecab_ruby_keitaiso/bin $PATH
 
