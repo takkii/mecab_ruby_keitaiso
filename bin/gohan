@@ -2,6 +2,11 @@
 # -*- coding: utf-8 -*-
 # vim: filetype=ruby
 
+module Piano
+
+module_function
+
+def onp
 begin
 
 require '~/mecab_ruby_keitaiso/lib/gohan.rb'
@@ -24,6 +29,20 @@ ensure
 	puts ''
 	puts '形態素解析を終了します...'
 	puts ''
+end
+end
+def version
+	puts 'gohan is keitaiso_tools made in 2017.'
+end
+end
+
+two = ARGV[1]
+
+case
+when two.nil?
+Piano.onp
+else
+Piano.version
 end
 
 __END__

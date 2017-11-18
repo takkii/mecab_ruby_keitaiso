@@ -1,6 +1,10 @@
 require 'mecab'
 require 'natto'
 
+class Elecjar
+
+def tokigiru
+
 puts ''
 puts '※ わかち書き'
 puts ''
@@ -59,3 +63,9 @@ ensure
 	puts ''
 	puts ' Natto_keitaiso_End '.center(80,'-')
 end
+end
+end
+
+Elecjar.new.tokigiru
+
+__END__
