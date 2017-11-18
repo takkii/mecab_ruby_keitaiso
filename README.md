@@ -20,4 +20,4 @@ mecab_sample.rb→gohan.rbに変更しました。朝食にごはん、食べま
 
 サンプルコード実行し形態素解析することができます。
 
-*UbuntuなどのLinuxカーネルでmecabとnattoをインストールしていることが前提です*
+*UbuntuなどのLinuxカーネルでRubyとmecabとnattoの環境構築していることが前提です*
