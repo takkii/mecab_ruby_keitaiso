@@ -2,4 +2,28 @@
 # -*- coding: utf-8 -*-
 # vim: filetype=ruby
 
+begin
+
 require '~/mecab_ruby_keitaiso/lib/gohan.rb'
+
+rescue SystemCallError => ex
+	puts ex.backtrace
+rescue IOError => ee
+	puts ee.backtrace
+rescue Exception => e
+	puts e.backtrace
+rescue Errno::ENOENT
+	puts '読み込みファイルを指定してください'
+rescue Errno::EACCES
+	puts 'ファイルへアクセス権限がありません'
+rescue LoadError
+	puts '対象ファイルがありません'
+else
+
+ensure
+	puts ''
+	puts '形態素解析を終了します...'
+	puts ''
+end
+
+__END__

@@ -45,6 +45,12 @@ rescue IOError => ee
 	puts ee.backtrace
 rescue Exception => e
 	puts e.backtrace
+rescue Errno::ENOENT
+	puts '読み込みファイルを指定してください'
+rescue Errno::EACCES
+	puts 'ファイルへアクセス権限がありません'
+rescue LoadError
+	puts '対象ファイルがありません'
 else
 
 ensure
