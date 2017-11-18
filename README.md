@@ -2,6 +2,8 @@
 
 Ruby Advent Calendar 2017で使用したコードの記録です。
 
+作ったコードをベースにシェル化しました。より使いやすくなっています。
+
 朝食に、めかぶとごはん。または、納豆とごはん。毎朝、食べてますか？
 
 mecab_sample.rb→gohan.rbに変更しました。朝食にごはん、食べましょう。
@@ -12,7 +14,7 @@ mecab_sample.rb→gohan.rbに変更しました。朝食にごはん、食べま
 
 > set -x PATH ~/mecab_ruby_keitaiso/bin $PATH
 
-gohanを使うことができるようになります。
+設定を反映後、gohanシェルを使うことができるようになります。
 
 > gohan Example.txt
 
