@@ -23,8 +23,6 @@ rescue Errno::EACCES
 	puts 'ファイルへアクセス権限がありません'
 rescue LoadError
 	puts '対象ファイルがありません'
-else
-
 ensure
 	puts ''
 	puts '形態素解析を終了します...'
