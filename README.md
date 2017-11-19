@@ -14,7 +14,7 @@ mecab_sample.rb→gohan.rbに変更しました。朝食にごはん、食べま
 
 > set -x PATH ~/mecab_ruby_keitaiso/bin $PATH
 
-設定を反映後、gohanシェルを使うことができるようになります。
+設定を反映後、riceシェルを使うことができるようになります。
 
 > rice Example.txt
 
