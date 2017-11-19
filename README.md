@@ -6,7 +6,7 @@ Ruby Advent Calendar 2017で使用したコードの記録です。
 
 朝食に、めかぶとごはん。または、納豆とごはん。毎朝、食べてますか？
 
-mecab_sample.rb→gohan.rbに変更しました。朝食にごはん、食べましょう。
+mecab_sample.rb→gohan.rb→rice.rbに変更しました。朝食にごはん、食べましょう。
 
 > git clone https://github.com/takkii/mecab_ruby_keitaiso.git
 
