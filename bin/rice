@@ -10,6 +10,8 @@ def onp
 
 begin
 
+require '~/mecab_ruby_keitaiso/lib/suihan.rb'
+require '~/mecab_ruby_keitaiso/lib/kome.rb'
 require '~/mecab_ruby_keitaiso/lib/rice.rb'
 
 rescue SystemCallError => ex
