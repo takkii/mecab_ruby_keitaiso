@@ -23,7 +23,6 @@ class Elecjar
   end
 end
 
-puts ''
 puts '※ Nattoで形態素解析'
 puts ''
 puts ' Natto_keitaiso_Start '.center(80, '-')

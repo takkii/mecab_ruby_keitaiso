@@ -26,7 +26,6 @@ class Elecjar
   end
 end
 
-
 puts ''
 puts '※ わかち書き'
 puts ''

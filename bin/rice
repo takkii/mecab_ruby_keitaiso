@@ -6,7 +6,7 @@ module Piano
 
 module_function
 
-def onp
+def shibu_onp
 
 begin
 
@@ -43,7 +43,7 @@ two = ARGV[1]
 
 case
 when two.nil?
-Piano.onp
+Piano.shibu_onp
 else
 Piano.version
 end

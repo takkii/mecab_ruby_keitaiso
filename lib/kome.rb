@@ -27,13 +27,11 @@ class Elecjar
   end
 end
 
-puts ''
 puts '※ ワードカウント ["わかち書き" , カウント数]'
 puts ''
 puts ' Mecab_wordcount_Start '.center(80, '-')
 puts ''
 Elecjar.new.hashi
-puts ''
 puts ''
 puts ' Mecab_wordcount_End '.center(80, '-')
 puts ''
