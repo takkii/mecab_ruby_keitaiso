@@ -7,22 +7,20 @@ require 'natto'
 class Elecjar
   def water
     m = MeCab::Tagger.new('-Owakati')
-    nx = Natto::MeCab.new
-    word = Hash.new(0)
     begin
-     file = File.open(ARGV[0])
-     text = file.read
-     p m.parse(text).split(' ')
+    file = File.open(ARGV[0])
+    text = file.read
+    p m.parse(text).split(' ')
     end
-   rescue Errno::ENOENT
-     puts '読み込みファイルを指定してください'
-   rescue Errno::EACCES
-     puts 'ファイルへアクセス権限がありません'
-   rescue LoadError
-     puts '対象ファイルがありません'
+  rescue Errno::ENOENT
+    puts '読み込みファイルを指定してください'
+  rescue Errno::EACCES
+    puts 'ファイルへアクセス権限がありません'
+  rescue LoadError
+    puts '対象ファイルがありません'
   else
-   ensure
-     file.close
+  ensure
+    file.close
   end
 end
 

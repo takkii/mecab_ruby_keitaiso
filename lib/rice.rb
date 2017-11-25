@@ -7,7 +7,7 @@ require 'natto'
 class Elecjar
   def costar_chawan
   nx = Natto::MeCab.new
-   begin
+  begin
      file2 = File.open(ARGV[0])
      texts = file2.read
      puts nx.parse(texts) do |x|
