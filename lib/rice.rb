@@ -8,18 +8,18 @@ class Elecjar
   def costar_chawan
   nx = Natto::MeCab.new
   begin
-     file2 = File.open(ARGV[0])
-     texts = file2.read
-     puts nx.parse(texts) do |x|
-     puts "#{x.feature}\t#{x.surface}"
-     end
-   rescue Errno::EACCES
-     puts 'ファイルへアクセス権限がありません'
-   rescue LoadError
-     puts '対象ファイルがありません'
-   ensure
-     file2.close
-   end
+    file2 = File.open(ARGV[0])
+    texts = file2.read
+    puts nx.parse(texts) do |x|
+    puts "#{x.feature}\t#{x.surface}"
+    end
+  rescue Errno::EACCES
+    puts 'ファイルへアクセス権限がありません'
+  rescue LoadError
+    puts '対象ファイルがありません'
+  ensure
+    file2.close
+  end
   end
 end
 
