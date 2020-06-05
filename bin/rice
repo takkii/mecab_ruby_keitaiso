@@ -2,6 +2,11 @@
 # -*- coding: utf-8 -*-
 # vim: filetype=ruby
 
+require 'kconv'
+
+Encoding.default_internal = 'UTF-8'
+Encoding.default_external = 'UTF-8'
+
 module Piano
 
 module_function
