@@ -2,6 +2,7 @@
 
 require 'mecab'
 require 'natto'
+require 'kconv'
 
 # Elecjar top-level class
 class Elecjar
@@ -10,7 +11,7 @@ class Elecjar
     begin
     file = File.open(ARGV[0])
     text = file.read
-    p m.parse(text).split(' ')
+    p m.parse(text).toutf8.split(' ')
     end
   rescue Errno::ENOENT
     puts '読み込みファイルを指定してください'

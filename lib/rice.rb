@@ -2,6 +2,7 @@
 
 require 'mecab'
 require 'natto'
+require 'kconv'
 
 # Elecjar top-level class
 class Elecjar
@@ -10,7 +11,7 @@ class Elecjar
   begin
     file2 = File.open(ARGV[0])
     texts = file2.read
-    puts nx.parse(texts) do |x|
+    puts nx.parse(texts).toutf8 do |x|
     puts "#{x.feature}\t#{x.surface}"
     end
   rescue Errno::EACCES

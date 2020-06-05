@@ -2,6 +2,7 @@
 
 require 'mecab'
 require 'natto'
+require 'kconv'
 
 # Elecjar top-level class
 class Elecjar
@@ -11,7 +12,7 @@ class Elecjar
     begin
     files = File.open(ARGV[0])
     text = files.read
-    m.parse(text).scan(/(?:[ぁ-ヶ]|[亜-黑]|[a-zA-Z_0-9]|ー)+/) { |str| word[str] += 1 }
+    m.parse(text).toutf8.scan(/(?:[ぁ-ヶ]|[亜-黑]|[a-zA-Z_0-9]|ー)+/) { |str| word[str] += 1 }
     print word.sort_by { |k, v| k <=> v }
     end
   rescue Errno::ENOENT
