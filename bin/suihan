@@ -15,7 +15,7 @@ def shibu_onp
 
 begin
 
-require '../lib/rice'
+require '../lib/suihan'
 
 rescue SystemCallError => ex
 	puts ex.backtrace
@@ -37,7 +37,7 @@ end
 end
 
 def version
-	require 'version'
+	require '~/mecab_ruby_keitaiso/lib/version.rb'
 end
 
 end
