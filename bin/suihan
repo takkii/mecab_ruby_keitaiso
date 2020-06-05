@@ -13,7 +13,7 @@ def shibu_onp
 
 begin
 
-require '../lib/suihan'
+require '~/mecab_ruby_keitaiso/lib/suihan'
 
 rescue SystemCallError => ex
 	puts ex.backtrace

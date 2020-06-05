@@ -13,7 +13,7 @@ def shibu_onp
 
 begin
 
-require '../lib/rice'
+require '~/mecab_ruby_keitaiso/lib/rice'
 
 rescue SystemCallError => ex
 	puts ex.backtrace

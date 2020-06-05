@@ -13,7 +13,7 @@ def shibu_onp
 
 begin
 
-require '../lib/kome'
+require '~/mecab_ruby_keitaiso/lib/kome'
 
 rescue SystemCallError => ex
 	puts ex.backtrace
