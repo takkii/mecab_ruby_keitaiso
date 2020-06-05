@@ -23,7 +23,11 @@ export PATH="$RICE_HOME/bin:$PATH"
 
 > rice Example.txt
 
-シェルを実行することで形態素解析することができます。
+> suihan Example.txt
+
+> kome Example.txt
+
+シェルを実行することでわかち書き、カウント、形態素解析することができます。
 
 [riceシェルの組み立て方](http://takkii.hatenablog.com/entry/2017/11/22/215228)
 
