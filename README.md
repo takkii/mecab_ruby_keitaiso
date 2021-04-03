@@ -44,3 +44,16 @@ cd mecab_ruby_keitaiso
 bundle config build.mecab --with-cppflags=-I$HOME/mecab-0.996/src
 bundle install
 ```
+
+### .zshrc
+
+```markdown
+export RICE_HOME=$HOME/mecab_ruby_keitaiso
+export PATH="$RICE_HOME/bin:$PATH"
+export MECAB_PATH=/usr/local/opt/mecab/bin/mecab
+export PATH="$MECAB_PATH:$PATH"
+export PATH="/usr/local/opt/mecab/bin:$PATH"
+export MECABRC=$HOME/mecab-0.996/mecabrc
+```
+
+_ソースとhomebrewを併用して使う設定_
